@@ -365,6 +365,11 @@ get_device_type(){
             echo "$TYPE_OTP"
             ;;
 
+        *GL.iNet*)
+            debug "Device recognized as GL.iNet"
+            echo "$TYPE_OTP"
+            ;;
+
         *)
             error "Unknown device model: '$model'"
             return 2
